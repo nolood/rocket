@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Rocket</title>
+</head>
+<body>
+  <div class="panel">
+    
+    <div class="temp">
+      <span class="rocket__mass-text">Масса ракеты * 10³ кг</span>
+      <input id="rocket-mass" type="text" placeholder="Масса ракеты * 10³ кг">
+      <span class="rocket__mass-text">Масса астероида * 10¹⁸ кг</span>
+      <div class="asteroid">
+        <input id="asteroid-mass" type="text" placeholder="Масса астероида * 10¹⁸ кг">
+        <div id="asteroid-menu" onclick="openSelect()" class="asteroid__openselectbox">↓</div>
+      </div>
+      <div id="selectmenu" class="asteroid__menu">
+        <span onclick="setMass(939)">Церера (939 * 10¹⁸) - масса в кг</span>
+        <span onclick="setMass(259)">Веста (259 * 10¹⁸) - масса в кг</span>
+        <span onclick="setMass(201)">Паллада (201 * 10¹⁸) - масса в кг</span>
+        <span onclick="setMass(86)">Гигея (86 * 10¹⁸) - масса в кг</span>
+        <span onclick="setMass(37)">Давида (37 * 10¹⁸) - масса в кг</span>
+      </div>
+      <span class="rocket__mass-text">Расстояние * 10⁸ км</span>
+      <input id="distance" placeholder="Расстояние от земли до астероида * 10⁸ км" type="text">
+      <button class="btn" onclick="start()">Начать</button>
+      <div class="stat">
+        <p>
+          G(m₁m₂) <br>
+          F = -------------------- <br>
+          r²
+        </p>
+        <p id="stat">
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="space">
+    <div id="planet"></div>
+    <div id="rocket"></div>
+    <div id="asteroid"></div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.space {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(27, 40, 56);
+}
+
+#planet {
+  background-image: url('./img/earth.png');
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+#asteroid {
+  background-image: url('./img/asteroid.png');
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+
+#rocket {
+  background-image: url('./img/rocket.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.stat {
+  width: 300px;
+  color: white;
+  text-align: center;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.panel{
+  display: flex;
+  position: absolute;
+  width: 300px;
+  right: 0px;
+  top: 0px;
+  background-color: rgb(16, 23, 32);
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.temp{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+
+
+
+#rocket-mass::placeholder,
+#asteroid-mass::placeholder {
+  color: rgb(143, 143, 143);
+}
+
+.rocket {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.btn {
+  color: white;
+  background-color: rgb(27, 40, 56);
+  border: none;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(42, 61, 85);
+  
+}
+
+.rocket__mass-text {
+  color: white;
+  margin: 10px 0;
+}
+
+#rocket-mass,
+#asteroid-mass,
+#distance {
+  border: none;
+  outline: none;
+  background-color: rgb(27, 40, 56);
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+#distance {
+  margin-bottom: 20px;
+}
+
+.asteroid {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.asteroid__openselectbox {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(27, 40, 56);
+  right: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.asteroid__menu.active{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.asteroid__menu {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.asteroid__menu span{
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(27, 40, 56);
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.asteroid__menu span:hover {
+  background-color: rgb(42, 61, 85);
+}
